@@ -6,6 +6,7 @@ This project is a web application designed to streamline DevOps processes using 
 
 - [Features](#features)
 - [Technologies](#technologies)
+- [AI Model](#ai-model)
 - [Getting Started](#getting-started)
 - [Directory Structure](#directory-structure)
 - [Usage](#usage)
@@ -16,7 +17,7 @@ This project is a web application designed to streamline DevOps processes using 
 - **Intelligent Automation**: Leverage AI to optimize and automate DevOps processes.
 - **Continuous Integration**: Seamlessly integrate code changes with automated testing and deployment.
 - **Scalable Infrastructure**: Effortlessly scale infrastructure with AI-driven insights and automation.
-- **Docker Automation**: Streamline container workflows with Docker automation solutions.
+- **Docker Automation**: Streamline your container workflows with Docker automation solutions.
 - **Advanced Options**: Additional DevOps tools and integrations for enhanced workflows.
 
 ## Technologies
@@ -25,6 +26,16 @@ This project is a web application designed to streamline DevOps processes using 
 - **Backend**: FastAPI
 - **Styling**: CSS (with Flexbox)
 - **Containerization**: Docker
+
+## AI Model
+
+This project utilizes a Large Language Model (LLM) named LLaMA-3 to enhance the automation and optimization processes in DevOps. The AI model is integrated to provide intelligent recommendations and automate routine tasks within the CI/CD pipeline.
+
+### Model Details
+
+- **Model Name**: LLaMA-3
+- **Provider**: Meta AI
+- **Capabilities**: Natural Language Understanding, Intelligent Automation, and Recommendations.
 
 ## Getting Started
 
@@ -44,5 +55,3 @@ Follow these instructions to get a copy of the project up and running on your lo
    ```sh
    git clone https://github.com/yourusername/devops-automation-with-ai.git
    cd devops-automation-with-ai
-
-
