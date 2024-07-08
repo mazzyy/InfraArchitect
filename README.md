@@ -53,5 +53,5 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 1. Clone the repository
    ```sh
-   git clone https://github.com/yourusername/devops-automation-with-ai.git
+   git clone https://github.com/mazzyy/DevopsPipelineAutomator-.git
    cd devops-automation-with-ai
