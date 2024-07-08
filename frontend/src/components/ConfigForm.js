@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { solarizedlight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import './ConfigForm.css';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+
 
 const ConfigForm = () => {
   const [repoUrl, setRepoUrl] = useState('');
@@ -43,6 +47,7 @@ const ConfigForm = () => {
   const [azureCredentials, setAzureCredentials] = useState('');
   const [pipelineContent, setPipelineContent] = useState('');
   const [showAdvanced, setShowAdvanced] = useState(false);
+  
 
   const languageOptions = {
     "Node.js": {
@@ -138,6 +143,11 @@ const ConfigForm = () => {
     } catch (error) {
       console.error("Error generating pipeline", error);
     }
+  };
+  const [isEditing, setIsEditing] = useState(false);
+
+  const toggleEditing = () => {
+    setIsEditing(!isEditing);
   };
 
   return (
@@ -365,11 +375,33 @@ const ConfigForm = () => {
 <button type="submit" className="submit-button">Generate Pipeline</button>
 </form>
 <div className="code-display">
-  <h3>Generated Pipeline Configuration:</h3>
-  <SyntaxHighlighter language="yaml" style={solarizedlight}>
-    {pipelineContent}
-  </SyntaxHighlighter>
-</div>
+      <h3>Generated Pipeline Configuration:</h3>
+      <button className="edit-text-button " onClick={toggleEditing}>
+        {isEditing ? 'Exit' : 'Edit'}
+      </button>
+      {isEditing ? (
+        <textarea
+          value={pipelineContent}
+          onChange={(e) => setPipelineContent(e.target.value)}
+          rows={50}
+          cols={80}
+          style={{ 
+            width: '100%', 
+            fontFamily: 'monospace', 
+            fontSize: '16px', // Match this to SyntaxHighlighter font size
+            backgroundColor: '#fdf6e3', 
+            color: '#657b83', 
+            border: '1px solid #ccc', 
+            padding: '24px',
+            borderRadius: '5px'
+          }}
+        />
+      ) : (
+        <SyntaxHighlighter language="yaml" style={solarizedlight}>
+          {pipelineContent}
+        </SyntaxHighlighter>
+      )}
+    </div>
 </div>
 );
 };

@@ -1,0 +1,30 @@
+.aipage {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .aipage textarea {
+    width: 100%;
+    height: 100px;
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 1em;
+  }
+  
+  .aipage button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .pipeline-content {
+    margin-top: 20px;
+  }
+  
+  .pipeline-content pre {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+  }
+  

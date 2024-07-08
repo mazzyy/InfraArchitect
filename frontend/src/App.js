@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ConfigForm from './components/ConfigForm';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
-
+import AIPage from './AIPage';
 
 function App() {
     return (
@@ -14,6 +14,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/cicd" element={<ConfigForm />} />
+                    <Route path="/ai" element={<AIPage />} />
                 </Routes>
             </div>
         </Router>

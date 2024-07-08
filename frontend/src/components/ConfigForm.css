@@ -62,4 +62,14 @@
   .advanced-button:hover, .submit-button:hover {
     background-color: #05274b;
   }
+
+  .edit-text-button {
+    padding: 0.20rem 0.5rem;
+    background-color:#0a3b70;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
   
