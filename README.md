@@ -44,7 +44,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 ### Prerequisites
 
 - Node.js
-- npm (or yarn)
+- npm 
 - Python 3.8+
 - pip
 - Docker (optional, for containerization)
