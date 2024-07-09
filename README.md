@@ -1,5 +1,5 @@
 # DevOps Automation with AI
-
+https://devopsgenie.tech/
 This project is a web application designed to streamline DevOps processes using AI-driven automation. The application features a modern, responsive homepage with sections on CI/CD Automation, CI/CD through AI, Docker Automation, and other DevOps options. It is built using React for the frontend and FastAPI for the backend.
 
 ## Table of Contents
